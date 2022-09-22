@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ancho-bandera: 250px;
+    --altura-bandera: 150px;
+}
+
+body {
+    background-color: #808080;
+}
+
+.contenedor-principal {
+    height: 900px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.primera-columna {
+    width: 80%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.primera-columna .a {
+    width: 100%;
+    height: 33%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primera-columna .b {
+    width: 100%;
+    height: 33%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primera-columna .c {
+    width: 100%;
+    height: 33%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.segunda-columna {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bandera {
+    background-color: white;
+    width: var(--ancho-bandera);
+    height: var(--altura-bandera);
+}
+
+
+/*  ------------------  Francia -------------------- */
+.francia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.francia .rojo {
+    background-color: #DA0025;
+    width: calc(var(--ancho-bandera)/3);
+}
+
+.francia .azul {
+    background-color: #0160A0;
+    width: calc(var(--ancho-bandera)/3);
+}
+
+/*  ------------------  Argentina -------------------- */
+.argentina {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.argentina .azul {
+    height: calc(var(--altura-bandera)/3);
+    background-color: #75AFE1;
+}
+
+/*  ------------------  España -------------------- */
+.espanya {
+    display: flex;
+    flex-direction: column;
+}
+
+.espanya .rojo {
+    height: calc(3*var(--altura-bandera)/10);
+    background-color: red;
+}
+
+.espanya .amarillo {
+    height: calc(2*var(--altura-bandera)/5);
+    background-color: yellow;
+}
+
+/*  ------------------  Alemania -------------------- */
+.alemania {
+    display: flex;
+    flex-direction: column;
+}
+
+.alemania .negro {
+    height: calc(var(--altura-bandera)/3);
+    background-color: black;
+}
+
+.alemania .rojo {
+    height: calc(var(--altura-bandera)/3);
+    background-color: #E10020;
+}
+
+.alemania .amarillo {
+    height: calc(var(--altura-bandera)/3);
+    background-color: #F7DA27;
+}
+
+/*  ------------------  Italia -------------------- */
+.italia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.italia .verde {
+    background-color: #009247;
+    width: calc(var(--ancho-bandera)/3);
+}
+
+.italia .rojo {
+    background-color: #CF2B36;
+    width: calc(var(--ancho-bandera)/3);
+}
+
+/*  ------------------  Costa Rica -------------------- */
+.costa-rica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.costa-rica .azul {
+    height: calc(var(--altura-bandera)/6);
+    background-color: #001488;
+}
+
+.costa-rica .rojo {
+    height: calc(var(--altura-bandera)/3);
+    background-color: #DA281C;
+}
+
+/*  ------------------  Cataluña -------------------- */
+.catalunya {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalunya .amarillo {
+    height: calc(var(--altura-bandera)/9);
+    background-color: yellow;
+}
+
+.catalunya .rojo {
+    height: calc(var(--altura-bandera)/9);
+    background-color: red;
+}
+
+/*  ------------------  Guinea Bissau -------------------- */
+.guinea-bissau {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.guinea-bissau .contenedor-franjas {
+    display: flex;
+    flex-direction: column;
+}
+
+.guinea-bissau .amarillo {
+    width: calc(var(--ancho-bandera) - var(--ancho-bandera)/3);
+    height: calc(var(--altura-bandera)/2);
+    background-color: #FDD116;
+}
+
+.guinea-bissau .rojo {
+    width:  calc(var(--ancho-bandera)/3);
+    background-color: red;
+}
+
+.guinea-bissau .verde {
+    width: calc(var(--ancho-bandera) - var(--ancho-bandera)/3);
+    height: calc(var(--altura-bandera)/2);
+    background-color: #009E49;
+}
+
+/*  ------------------  Emiratos Árabes -------------------- */
+.emiratos-arabes {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.emiratos-arabes .contenedor-franjas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.emiratos-arabes .negro {
+    width: calc(var(--ancho-bandera) - var(--ancho-bandera)/4);
+    height: calc(var(--altura-bandera)/3);
+    background-color: black;
+}
+
+.emiratos-arabes .rojo {
+    width: calc(var(--ancho-bandera)/4);
+    background-color: red;
+}
+
+.emiratos-arabes .verde {
+    width: calc(var(--ancho-bandera) - var(--ancho-bandera)/4);
+    height: calc(var(--altura-bandera)/3);
+    background-color: #00732E;
+}
+
+/*  ------------------  Japón -------------------- */
+.japon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.japon .rojo {
+    width: calc(2*var(--ancho-bandera)/5);
+    height: calc(2*var(--ancho-bandera)/5);
+    border-radius: 50%;
+    background-color: red;
+}
+
+/*  ------------------  Panamá -------------------- */
+.panama {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panama div {
+    width: calc(var(--ancho-bandera)/2);
+    height: calc(var(--altura-bandera)/2);
+}
+
+.panama .rojo {
+    background-color: #DC0A13;
+}
+
+.panama .azul {
+    background-color: #011E56;
+}
+
+/*  ------------------  República Dominicana -------------------- */
+.rep-dom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.rep-dom .rojo {
+    background-color: red;
+    width: calc(11*var(--ancho-bandera)/25);
+    height: calc(2*var(--altura-bandera)/5);
+}
+
+.rep-dom .azul {
+    background-color: #002E62;
+    width: calc(11*var(--ancho-bandera)/25);
+    height: calc(2*var(--altura-bandera)/5);
+}
+
+/*  ------------------  Estados Unidos -------------------- */
+.eeuu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.eeuu .rojo {
+    width: 100%;
+    height: calc(var(--altura-bandera)/13);
+    background-color: #A0152D;
+}
+
+.eeuu .azul {
+    width: calc( (2*var(--ancho-bandera)/5) - 6px );
+    height: calc( (7*var(--altura-bandera)/13) - 6px );
+    position: absolute;
+    background-color: #022D60;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+.eeuu .azul .contenedor-estrellasA {
+    width: calc( (2*var(--ancho-bandera)/5) - 6px );
+    height: calc( (7*var(--altura-bandera)/13 - 6px) /11 );
+    display: flex;
+    justify-content: space-between;
+    background-color: #022D60;
+}
+.eeuu .azul .contenedor-estrellasB {
+    width: calc( (2*var(--ancho-bandera)/5) - 6px );
+    height: calc( (7*var(--altura-bandera)/13 - 6px) /11 );
+    display: flex;
+    justify-content: space-around;
+    margin: auto 4px;     /* No se podía usar margin, pero permitidme este para que las estrellas queden bien ^^' */
+    background-color: #022D60;
+}
+
+
+
+
+
